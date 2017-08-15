@@ -7,7 +7,7 @@ Maze* MazeBuilder::createMaze(MazeType type, unsigned difficulty) {
     case MazeType::RecursiveBacktracker:
       return new RBMaze{difficulty};
   }
-  return nullptr; //it should be not possible to get here, but for the sake of -Wpedantic and -Werror, i've added that
+  return nullptr; //it shouldn't be possible to get here, but for the sake of -Wpedantic and -Werror, i've added that
 }
 
 Maze* MazeBuilder::createMaze(std::string type, unsigned difficulty) {
